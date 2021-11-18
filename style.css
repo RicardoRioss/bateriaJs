@@ -1,0 +1,77 @@
+*{
+    margin-top:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', 'cursive';
+    font-family: 'Permanent Marker', 'cursive';
+}
+body{
+    display:flex;
+    min-height: 100vh;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    background-color: rgb(40, 34, 70);
+}
+
+h1{
+    color: white;
+    margin-bottom: 20px;
+    font-size:50px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.key {
+    width:80px;
+    height:80px;
+    border:2px solid white;
+    color: white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+}
+
+.key.active {
+    border:2px solid yellow;
+    color:yellow;
+}
+
+.composer {
+    width:260px;
+    margin-top: 20px;
+}
+
+.composer #input {
+    width:100%;
+    outline: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica;
+    padding: 10px 15px;
+}
+
+.composer button {
+    width:100%;
+    height:40px;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.composer button:hover {
+    background-color: rgba(0, 0,0, 0.2);
+}
+
+footer {
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+}
